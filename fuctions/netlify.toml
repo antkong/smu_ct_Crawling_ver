@@ -1,0 +1,7 @@
+[build]
+  functions = "netlify/functions"
+
+# Schedule event for the function 'fetch-data'
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  schedule = "0 0 * * *"  # 매일 자정에 실행 (cron 형식)
